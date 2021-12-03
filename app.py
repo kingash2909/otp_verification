@@ -25,7 +25,7 @@ def verify_otp():
         client = Client(account_sid, auth_token)
 
         verification = client.verify \
-            .services('VAc91dc354e1703023b4f8b5e5d8fcad77') \
+            .services('VA7738310f788bf8e5ccf33de4aa83a1fb') \
             .verifications \
             .create(to=mobile_number, channel='sms')
 
@@ -48,7 +48,7 @@ def get_otp():
     client = Client(account_sid, auth_token)
                                             
     verification_check = client.verify \
-        .services('VAc91dc354e1703023b4f8b5e5d8fcad77') \
+        .services('VA7738310f788bf8e5ccf33de4aa83a1fb') \
         .verification_checks \
         .create(to=mobile_number, code=received_otp)
     print(verification_check.status)
