@@ -21,7 +21,7 @@ def verify_otp():
 
     if username == 'verify' and password == '12345':   
         account_sid = 'AC0a976ad1fea5c227ddd42560d232a152'
-        auth_token = 'b0be7ab2a71f15a0bf0ea7ee17cd91f3'
+        auth_token = '6aa2ea98ebe5224628d0b5e7fb722ff7'
         client = Client(account_sid, auth_token)
 
         verification = client.verify \
@@ -44,7 +44,7 @@ def get_otp():
     mobile_number = request.form['number']
 
     account_sid = 'AC0a976ad1fea5c227ddd42560d232a152'
-    auth_token = 'b0be7ab2a71f15a0bf0ea7ee17cd91f3'
+    auth_token = '6aa2ea98ebe5224628d0b5e7fb722ff7'
     client = Client(account_sid, auth_token)
                                             
     verification_check = client.verify \
